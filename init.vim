@@ -26,6 +26,7 @@ Plug 'akinsho/bufferline.nvim', { 'tag': '*' }
 " Tab para autocompletar
 Plug 'ervandew/supertab'  
 
+" Plugins para autocompletar
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/cmp-nvim-lsp'
@@ -45,7 +46,7 @@ nnoremap <C-p> :bnext<CR>
 nnoremap <C-d> :bd<CR>
 nnoremap <C-n> :NvimTreeOpen<CR>
 
-lua require('autocomplete.cpp')
+lua require('autocomplete.cfg')
 
 lua <<EOF
 require("nvim-tree").setup({
