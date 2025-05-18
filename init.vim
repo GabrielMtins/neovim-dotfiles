@@ -15,6 +15,8 @@ Plug 'tikhomirov/vim-glsl'
 Plug 'EdenEast/nightfox.nvim'
 Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 Plug 'scottmckendry/cyberdream.nvim'
+Plug 'maxmx03/fluoromachine.nvim'
+Plug 'nyoom-engineering/oxocarbon.nvim'
 
 " Árvore de navegação e ícones
 Plug 'nvim-tree/nvim-tree.lua'

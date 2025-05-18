@@ -27,4 +27,5 @@ cmp.setup({
   }),
 })
 
+-- Desativar warnings e erros
 vim.diagnostic.disable()
