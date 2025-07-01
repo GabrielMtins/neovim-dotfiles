@@ -7,6 +7,15 @@ require('autocomplete.python')
 -- Autocompletar com nvim-cmp e LuaSnip
 local cmp = require'cmp'
 local luasnip = require'luasnip'
+local cmp_autopairs = require('nvim-autopairs.completion.cmp')
+local npairs = require('nvim-autopairs')
+
+npairs.setup()
+
+cmp.event:on(
+	'confirm_done',
+	cmp_autopairs.on_confirm_done()
+)
 
 cmp.setup({
 	snippet = {
