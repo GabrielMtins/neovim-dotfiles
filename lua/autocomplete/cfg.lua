@@ -44,4 +44,9 @@ cmp.setup({
 })
 
 -- Desativar warnings e erros
-vim.diagnostic.disable()
+vim.diagnostic.config({
+	virtual_text = false,   -- Remove mensagens inline
+	signs = false,         -- Remove ícones na coluna
+	underline = false,     -- Remove sublinhado
+	update_in_insert = false
+})
