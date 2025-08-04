@@ -36,6 +36,7 @@ Plug 'Mofiqul/vscode.nvim'
 Plug 'AlexvZyl/nordic.nvim', { 'branch': 'main' }
 Plug 'folke/tokyonight.nvim'
 Plug 'navarasu/onedark.nvim'
+Plug 'bluz71/vim-moonfly-colors', { 'as': 'moonfly' }
 
 " Árvore de navegação e ícones
 Plug 'nvim-tree/nvim-tree.lua'
@@ -84,7 +85,11 @@ lua require('autocomplete.cfg')
 
 " Configuração para o tema ter uma cor de fundo mais escura
 lua require("catppuccin").setup({color_overrides = {mocha = {base = "#161621"}}})
-colorscheme catppuccin-mocha
+" colorscheme github_dark_high_contrast
+" colorscheme catppuccin-mocha
+" colorscheme cyberdream
+colorscheme carbonfox
+" colorscheme moonfly
 
 lua <<EOF
 require("nvim-tree").setup({
