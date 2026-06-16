@@ -60,11 +60,6 @@ call plug#end()
 lua require'feline'.setup()
 lua require'bufferline'.setup()
 
-" colorscheme catppuccin-mocha
-" colorscheme carbonfox
-" colorscheme github_dark_default
-" colorscheme tokyonight-night
-
 autocmd! BufNewFile,BufRead *.vs,*.fs set ft=glsl
 
 nnoremap <C-o> :bprev<CR>
@@ -83,13 +78,7 @@ nnoremap <F9> :!rm -rf ./build<CR>
 
 lua require('autocomplete.cfg')
 
-" Configuração para o tema ter uma cor de fundo mais escura
-lua require("catppuccin").setup({color_overrides = {mocha = {base = "#161621"}}})
-" colorscheme github_dark_high_contrast
-" colorscheme catppuccin-mocha
-" colorscheme cyberdream
-colorscheme carbonfox
-" colorscheme moonfly
+colorscheme moonfly
 
 lua <<EOF
 require("nvim-tree").setup({

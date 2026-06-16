@@ -3,5 +3,8 @@
 -- Inicializa LSP com clangd
 require('lspconfig').clangd.setup {
   filetypes = { "c", "cpp", "objc", "objcpp" },
-  cmd = { "clangd" },
+  cmd = { 
+	  "clangd",
+	  "--clang-tidy=false",
+  },
 }

@@ -1,7 +1,6 @@
 -- Tipos de autocompletar
 -- Dependências: clang
 require('autocomplete.cpp')
-require('autocomplete.web')
 require('autocomplete.python')
 
 -- Autocompletar com nvim-cmp e LuaSnip
