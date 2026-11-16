@@ -78,7 +78,9 @@ nnoremap <F9> :!rm -rf ./build<CR>
 
 lua require('autocomplete.cfg')
 
-colorscheme moonfly
+" colorscheme moonfly
+colorscheme github_dark_default
+" colorscheme cyberdream
 
 lua <<EOF
 require("nvim-tree").setup({

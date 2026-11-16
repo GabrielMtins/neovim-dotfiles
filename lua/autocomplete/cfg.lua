@@ -2,6 +2,7 @@
 -- Dependências: clang
 require('autocomplete.cpp')
 require('autocomplete.python')
+require('autocomplete.latex')
 
 -- Autocompletar com nvim-cmp e LuaSnip
 local cmp = require'cmp'
