@@ -1,4 +1,9 @@
-require('lspconfig').pyright.setup({
-  cmd = { "pyright-langserver", "--stdio" },
-  filetypes = { "python" },
+vim.lsp.config('pyright', {
+	cmd = {
+		"pyright-langserver",
+		"--stdio",
+	},
+	filetypes = { "python", "py" },
 })
+
+vim.lsp.enable('pyright')

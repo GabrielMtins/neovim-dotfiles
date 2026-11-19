@@ -1,1 +1,4 @@
-require('lspconfig').texlab.setup({})
+vim.lsp.config('texlab', {
+})
+
+vim.lsp.enable('texlab')

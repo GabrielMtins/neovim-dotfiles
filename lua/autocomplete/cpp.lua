@@ -1,10 +1,9 @@
--- Configuração de autocompletar para C++ com clangd e nvim-cmp
+vim.lsp.config('clangd', {
+	cmd = {
+		"clangd",
+		"--clang-tidy=false",
+	},
+	filetypes = { "c", "cpp" },
+})
 
--- Inicializa LSP com clangd
-require('lspconfig').clangd.setup {
-  filetypes = { "c", "cpp", "objc", "objcpp" },
-  cmd = { 
-	  "clangd",
-	  "--clang-tidy=false",
-  },
-}
+vim.lsp.enable('clangd')

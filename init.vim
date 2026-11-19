@@ -78,8 +78,9 @@ nnoremap <F9> :!rm -rf ./build<CR>
 
 lua require('autocomplete.cfg')
 
+colorscheme carbonfox
 " colorscheme moonfly
-colorscheme github_dark_default
+" colorscheme github_dark_default
 " colorscheme cyberdream
 
 lua <<EOF
